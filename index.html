@@ -1,17 +1,25 @@
 <!DOCTYPE html>
     <head>
+      <link rel="stylesheet" href="defpagestyle.css">
+      <title>
         bulls & cows
+      </title>
     </head>
-    <body>
-        <link rel="stylesheet" href="defpagestyle.css">
-        <div>
-            <h1>Game of bulls and cows(add design)</h1>
-        </div>
+
+    <body style="padding: 0; margin: 0;"> 
+      <div class="topcontainer">
+        <img src="bulls.png" height="50" style="float: left;">
+        Bulls and cows
+        <img src="cows1.png" height="50" style="float:right;">
+      </div>
+
         <div class="split left">
             <div class="centered">
               <h2>Players name</h2>
               <p>
                 <input id = "guess" , type="text">
+              </p>
+              <p>
                 <button id="player" type="submit">Check number</button>
               </p>
             </div>
