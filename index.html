@@ -5,6 +5,10 @@
           const subusern = event.target;
           if (subusern.className==="submt"){
             subusern.parentElement.remove();
+          
+            $('meta[name="viewport"]').attr('content', 'height=device-width,width=device-height,initial-scale=1.0,maximum-scale=1.0');
+            $(window).resize();
+            
           }
         })
       </script>
