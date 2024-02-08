@@ -8,28 +8,34 @@
     </head>
 
     <body style="padding: 0; margin: 0; font-family: Arial, Helvetica, sans-serif;font-weight: bold;"> 
-        <div class="topcontainer">
-          B&C
-          <img src="bulls.png" height="30" style="float: left;">
-          <img src="cows1.png" height="30" style="float:left;">
-          
-        </div>
+      <div class="overlay" style="color: rgb(133, 130, 124);">
+        <label>Username:</label> <input id="username" class="inputs" type="text">
+        <p></p>
+        <button id="subusern" type="submit" class="buttons">Continue</button>
+      </div> 
+      <div class="topcontainer">
+        
+        <img src="bulls.png" height="25">
+        <div2>&</div2>
+        <img src="cows1.png" height="25">
+        
+      </div>
 
-        <div1 class="left">
-          <div style="color: rgb(133, 130, 124); font-size: 40;text-align: left;padding-top: 5%; padding-left: 5px;">Your number</div>
-              <h2 style="padding-top: 20%;">Players name</h2>
-              <p>
-                <input id = "guess" style="border-radius: 0px; -webkit-border-radius: 0;" type="text">
-              </p>
-              <p>
-                <button id="player" class="buttons" type="submit">Check number</button>
-              </p>
-              
-          </div1>
-          
-          <div2 class="right">
-              <h2 style="padding-top: 30%;" >AI GIGA BOT</h2>
-              <p>interactive window where bot will throw out guesses</p>
-          </div2>
+      <div1 class="left">
+        <div style="color: rgb(133, 130, 124); font-size: 40;text-align: left;padding-top: 5px; padding-left: 5px;">Your number</div>
+            <h2 style="padding-top: 20%;">Players name</h2>
+            <p>
+              <input id = "guess" type="text" class="inputs">
+            </p>
+            <p>
+              <button id="player" class="buttons" type="submit">Check number</button>
+            </p>
+            
+        </div1>
+        
+        <div2 class="right">
+            <h2 style="padding-top: 25%;" >AI GIGA BOT</h2>
+            <p>interactive window where bot will throw out guesses</p>
+        </div2>
     </body>
 </html>
