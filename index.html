@@ -5,14 +5,11 @@
           const subusern = event.target;
           if (subusern.className==="submt"){
             subusern.parentElement.remove();
-          
-            $('meta[name="viewport"]').attr('content', 'height=device-width,width=device-height,initial-scale=1.0,maximum-scale=1.0');
-            $(window).resize();
             
           }
         })
       </script>
-      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
       <link rel="stylesheet" href="defpagestyle.css">
       <title>
         bulls & cows
