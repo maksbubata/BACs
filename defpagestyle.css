@@ -54,8 +54,6 @@ body {
   }
   .overlay{
     background: rgba(41, 46, 56, 0.9);
-    display: flexbox;
-    -webkit-box-flex: box;
     position:fixed;
     width:100%;
     height:100%;
