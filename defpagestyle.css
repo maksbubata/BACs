@@ -1,5 +1,6 @@
 html, body {
   height: 100%;
+  width: 100%;
   -ms-box-sizing: border-box;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -87,7 +88,7 @@ body {
   padding-right: 10%;
   font-family: 'Courier New', Courier, monospace;
   background-color: rgba(17, 22, 23, 0.5);
-  font-size: 15px;
+  font-size: 19px;
   
 }
 .wrong {
