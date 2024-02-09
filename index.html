@@ -1,23 +1,17 @@
 <!DOCTYPE html>
     <head>
       <script>
-        window.document.addEventListener('orientationchange', function() {
-          var iOS = navigator.userAgent.match(/(iPad|iPhone|iPod)/g);
-          var viewportmeta = document.querySelector('meta[name="viewport"]');
-          if (iOS && viewportmeta) {
-            if (viewportmeta.content.match(/width=device-width/)) {
-              viewportmeta.content = viewportmeta.content.replace(/width=[^,]+/, 'width=1');
-            }
-            viewportmeta.content = viewportmeta.content.replace(/width=[^,]+/, 'width=' + window.innerWidth);
+        if (/(iPad|iPhone|iPod)/g.test(navigator.userAgent) && window.addEventListener && document.querySelector) {
+        window.addEventListener('orientationchange', rotateWithNoScale, false);
           }
-        }, false);
-        document.addEventListener('click', event=>{
-          const subusern = event.target;
-          if (subusern.className==="submt"){
-            subusern.parentElement.remove();
-            
+          function rotateWithNoScale() {
+              var viewport = document.querySelector("meta[name=viewport]");
+              if (viewport) {
+                  var content = viewport.getAttribute("content");
+                  viewport.setAttribute("content", content + ", maximum-scale=1.0");
+                  setTimeout(function () { viewport.setAttribute("content", content); }, 90);
+              }
           }
-        })
         let username;
         window.addEventListener('DOMContentLoaded', function() {
           username = document.getElementById('subusern');
