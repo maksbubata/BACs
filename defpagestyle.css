@@ -81,8 +81,8 @@ body {
   border-width: 0;
 }
 .rules{
-  padding-left: 20%; 
-  padding-right: 20%;
+  padding-left: 10%; 
+  padding-right: 10%;
   font-family: 'Courier New', Courier, monospace;
   background-color: rgba(17, 22, 23, 0.5);
   font-size: 15px;
