@@ -8,6 +8,15 @@
             
           }
         })
+        let username;
+        window.addEventListener('DOMContentLoaded', function() {
+          username = document.getElementById('subusern');
+          username.addEventListener('click', func);
+
+          function func() {
+            document.getElementById("plname").innerHTML = document.getElementById("username").value
+          }
+        });
       </script>
       <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
       <link rel="stylesheet" href="defpagestyle.css">
@@ -34,7 +43,7 @@
 
       <div1 class="left">
         <div style="color: rgb(133, 130, 124); font-size: 40;text-align: left;padding-top: 5px; padding-left: 5px;">Your number</div>
-            <h2 style="padding-top: 20%;">Players name</h2>
+            <h2 style="padding-top: 20%;" id="plname">Players name</h2>
             <p>
               <input id = "guess" type="text" class="inputs">
             </p>
