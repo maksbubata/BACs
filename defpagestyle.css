@@ -84,7 +84,10 @@ body {
   font-family: 'Courier New', Courier, monospace;
   background-color: rgba(17, 22, 23, 0.5);
 }
-
+.wrong {
+  text-decoration: line-through;
+  color:rgb(255, 0, 0);
+}
 label{
   display: block;
   text-align: center;
