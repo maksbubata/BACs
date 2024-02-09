@@ -83,6 +83,7 @@ body {
   padding-right: 20%;
   font-family: 'Courier New', Courier, monospace;
   background-color: rgba(17, 22, 23, 0.5);
+  font-size: 15px;
 }
 .wrong {
   text-decoration: line-through;
