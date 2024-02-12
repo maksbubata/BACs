@@ -71,7 +71,7 @@ body {
 
   }
   .overlay{
-    background: rgba(228, 241, 255, 0.9);
+    background: rgba(234, 237, 241, 0.9);
     position:fixed;
     width:90%;
     height:90%;
@@ -84,7 +84,7 @@ body {
     padding-top: 10%;
     margin-top: 3%;
     border: 1px solid grey;
-    box-shadow: 3px 3px 10px;
+    box-shadow: 3px 3px 25px;
    
 }
 .inputs {
@@ -93,10 +93,10 @@ body {
   border-width: 1px solid black;
 }
 .rules{
-  padding-left: 10%; 
-  padding-right: 10%;
+  margin-left: 5%; 
+  margin-right: 5%;
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-  background-color: rgba(187, 196, 205, 0.5);
+  background-color: rgb(203, 206, 210);
   font-size: 19px;
   
 }

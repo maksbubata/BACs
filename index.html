@@ -12,14 +12,14 @@
 
       <div class="overlay" style="color: rgb(7, 5, 1);padding-bottom: 10%;">
         <h1>Bulls and Cows</h1>
-        <div class="rules">A game of Bulls and Cows. <span style="color: rgb(80, 177, 96)">RULES</span>: each player chooses a four digit number (i.e. 9230, 4572, 3821, 1058...) without 0 as a first digit (eg <span class="wrong">0</span>128, <span class="wrong">0</span>854...) and without repeating digits (eg <span class="wrong">11</span>92, 3<span class="wrong">555</span>, <span class="wrong">0</span>2<span class="wrong">66</span>),
+        <div class="rules"><span style="color: rgb(80, 177, 96)">RULES</span>: each player chooses a four digit number (i.e. 9230, 4572, 3821, 1058...) without 0 as a first digit (eg <span class="wrong">0</span>128, <span class="wrong">0</span>854...) and without repeating digits (eg <span class="wrong">11</span>92, 3<span class="wrong">555</span>, <span class="wrong">0</span>2<span class="wrong">66</span>),
           after which in turns they will try to guess their opponents number. Each digit guessed in its correct place is a bull and a digit guessed correct, but in a wrong position is a cow.
           For example player2 number is <span style="color: rgb(30, 199, 0)">1092</span>, player1 gives a guess: <span style="color: rgb(0, 126, 199)">1369</span>? to which player2 will reply based on his number that player1 has guessed 1 Bull- <span style="color: rgb(30, 199, 0)">1</span>369 and 1 Cow - 136<span style="color: rgb(255, 242, 0)">9</span>.</div>
           <p></p>
           <div style="padding-bottom: 50%;">
             <label>Name:</label>
             <p></p>
-            <input id="gamertag" class="inputs" type="text">
+            <input id="gamertag" class="inputs" type="text" autocomplete="off" >
             <p></p>
             <button id="subusern" type="submit" class="submt">Play</button>
           </div>
@@ -35,10 +35,12 @@
       </div>
 
       <div1 class="left">
-        <div style="font-size: 40;text-align: left;padding-top: 5px; padding-left: 5px;">Your number:
-          <form>
-            <input type="text" inputmode ="numeric" maxlength="4" pattern="\d{4}"  required/>
-          </form>
+        <div style="font-size: 40;text-align: left;padding: 5px;">Your number:
+          <div id="numb1">
+            <input id="playernum" type="text" inputmode ="numeric"  autocomplete="off" >
+            <button type="submit" class="submnum" id="submnum">Submit</button>
+            <div id="wrngnum"></div>
+          </div>
         </div>
             <h2 style="padding-top: 20%;" id="plname">Players name</h2>
             <p></p>
@@ -51,7 +53,7 @@
         </div1>
         
         <div2 class="right">
-            <h2 style="padding-top: 25%;" >AI GIGA BOT</h2>
+            <h2 style="padding-top: 30%;" >AI GIGA BOT</h2>
             <p>interactive window where bot will throw out guesses</p>
         </div2>
     </body>
